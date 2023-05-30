@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Area Calculator</h2>
+        <p>Enter the length and width below to calculate the Area</p>
+        <div class="toggle-container">
+            <label for="ltoggleBtn">Input Type:</label>
+            <button id="toggleBtn" class="toggle-btn active">cm</button>
+        </div>
+
+        <div class="input-row">
+            <div class="input-container toggle-input-container">
+                <label for="lengthCm">Length (cm):</label>
+                <input type="number" required id="lengthCm" placeholder="Enter length in cm">
+            </div>
+            <div class="input-container toggle-input-container hidden">
+                <label for="lengthFt">Length (ft):</label>
+                <input type="number" required id="lengthFt" placeholder="Enter length in feet">
+            </div>
+            <div class="input-container toggle-input-container hidden">
+                <label for="lengthIn">Length (in):</label>
+                <input type="number" required id="lengthIn" placeholder="Enter length in inches">
+            </div>
+        </div>
+
+        <div class="input-row">
+            <div class="input-container toggle-input-container">
+                <label for="widthCm">Width (cm):</label>
+                <input type="number" required id="widthCm" placeholder="Enter width in cm">
+            </div>
+            <div class="input-container toggle-input-container hidden">
+                <label for="widthFt">Width (ft):</label>
+                <input type="number" required id="widthFt" placeholder="Enter width in feet">
+            </div>
+            <div class="input-container toggle-input-container hidden">
+                <label for="widthIn">Width (in):</label>
+                <input type="number" required id="widthIn" placeholder="Enter width in inches">
+            </div>
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
